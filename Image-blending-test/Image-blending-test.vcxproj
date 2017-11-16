@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1484DDF5-1BB6-4EE0-B0A5-A4B1FA8D3607}</ProjectGuid>
+    <RootNamespace>Imageblendingtest</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Visual_Studio_Projects\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_calib3d320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_core320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_features2d320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_flann320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_highgui320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_imgcodecs320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_imgproc320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_ml320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_objdetect320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_photo320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_shape320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_stitching320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_superres320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_video320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_videoio320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_videostab320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_xfeatures2d320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_reg320.lib;..\..\of_v0.9.8_vs_release\addons\ofxOpenCv\libs\opencv_3.2\lib\vs\x64\Release\opencv_ccalib320.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Alignment.cpp" />
+    <ClCompile Include="Cloning.cpp" />
+    <ClCompile Include="main-cloning.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Alignment.h" />
+    <ClInclude Include="Cloning.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
